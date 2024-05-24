@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqkoy7eytgcfw"]
+
+[ext_resource type="Script" path="res://language_item.gd" id="1_u2fts"]
+[ext_resource type="Theme" uid="uid://bbo57lt17ps1b" path="res://new_theme.tres" id="2_733ye"]
+
+[node name="HBoxContainer" type="HBoxContainer"]
+custom_minimum_size = Vector2(0, 48)
+offset_right = 405.0
+offset_bottom = 48.0
+script = ExtResource("1_u2fts")
+
+[node name="Label" type="Label" parent="."]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+theme = ExtResource("2_733ye")
+text = "中文"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "hello world"

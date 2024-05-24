@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bbo57lt17ps1b"]
+
+[ext_resource type="FontFile" uid="uid://286cvdburk4i" path="res://adobeheitistd-regular.otf" id="1_m25lu"]
+
+[resource]
+default_font = ExtResource("1_m25lu")
+default_font_size = 24
