@@ -32,14 +32,16 @@ func _ready() -> void:
 
 
 func reload():
-	for c in $HBoxContainer/VBoxContainer.get_children():
+	var container = $MarginContainer/HBoxContainer/VBoxContainer
+	
+	for c in container.get_children():
 		c.queue_free()
 		
 	for i in range(languages.size()):
 		var item = lang_item.instantiate()
 		item.set_language(languages[i])
 		item.set_preview_text(preview_text[i])
-		$HBoxContainer/VBoxContainer.add_child(item)
+		container.add_child(item)
 
 
 func files_dropped(files):
@@ -57,4 +59,3 @@ func set_font(font: Font):
 	font.set_allow_system_fallback(false)
 	theme.default_font = font
 	reload()
-	
